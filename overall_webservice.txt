@@ -1,0 +1,906 @@
+FB Login:
+---------------
+1) http://perfectrdp.us/carpedm_webservice/fb_registration.php
+Post Values:
+	profile_id : 11246546479679
+	first_name : TestF
+    last_name : TestL 
+	email : test123@gmail.com
+	imgurl : http://www.facebook.com/testphoto.jpg
+    latitude : 11.12123164564
+    langtitude : 10.2236666
+
+{
+    "status": 1,
+    "msg": "Registration Successfully",
+    "profile_id": "1037118599725144",
+    "first_name": "TestF",
+    "last_name": "TestL",
+    "email": "test123@gmail.com",
+    "user_image": "http://www.facebook.com/testphoto.jpg",
+    latitude : 11.12123164564,
+    langtitude : 10.2236666
+}
+
+---------------------------------------------
+
+User registration:
+--------------------
+2) http://perfectrdp.us/carpedm_webservice/user_registration.php
+Post Values:
+    first_name : Test1F
+    last_name : Test1L 
+    email : test1234@gmail.com
+    password : 12345678
+    latitude : 11.12123164564
+    langtitude : 10.2236666
+
+{
+    "status": 1,
+    "msg": "Registration Successfully",
+    "first_name": "TestF",
+    "last_name": "TestL",
+    "email": "test123@gmail.com",
+    "latitude" : "11.12123164564",
+    "langtitude" : "10.2236666"
+    "profile_id" : "test1234@gmail.com"
+}
+
+
+---------------------------------------------
+
+User login:
+--------------------
+3) http://perfectrdp.us/carpedm_webservice/user_login.php
+Post Values:
+    email : test1234@gmail.com
+    password : 12345678
+    latitude : 11.12123164564
+    langtitude : 10.2236666
+
+{
+    "status": 1,
+    "msg": "Welcome to our trip",
+    "email": "test1234@gmail.com",
+    "first_name": "Test1F",
+    "last_name": "Test2L",
+    "latitude" : 11.12123164564,
+    "langtitude" : 10.2236666
+    "profile_id" : "test1234@gmail.com",
+    "user_online" : 1
+}
+
+---------------------------------------------
+
+Forgot Password:
+--------------------
+4) http://perfectrdp.us/carpedm_webservice/forgot_password.php
+Post Values:
+    email : test1234@gmail.com
+
+{
+    "status": 1,
+    "msg": "New Password Sent to Your Email-Id.",
+    "email": "sasi@rgmobiles.com"
+}
+
+--------------------------------------------
+
+Tour details list:
+--------------------
+5) http://perfectrdp.us/carpedm_webservice/get_tour_details.php
+
+{
+    "status": 1,
+    "msg": "Tour List Details",
+    "tour_list": [
+        {
+            "tour_id": "1",
+            "tour_name": "Cotopaxi Day Tour",
+            "tour_latitude": "11.1212316",
+            "tour_langitude": "10.2236666",
+            "tour_image": "http://perfectrdp.us/carpedm_webservice/uploads/cotopaxi_img_1.jpg",
+            "upcoming_dates": "19 Sep,25 Sep,29 Sep",
+            "tour_shortdesc": "Prepare to hike, bike and smile.  Trekking for all ages but biking must be experienced or confident with downhill biking.",
+            "how_many_days": "1 Day | Cotopaxi",
+            "tour_activites_list": [
+                {
+                    "actv_id": "1",
+                    "actv_name": "Hike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/hike.jpg"
+                },
+                {
+                    "actv_id": "2",
+                    "actv_name": "Bike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/bike.jpg"
+                },
+                {
+                    "actv_id": "3",
+                    "actv_name": "Trekking",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/trekking.jpg"
+                }
+            ],
+            "tour_video": "https://www.youtube.com/watch?v=CCpgwG7n1c8",
+            "tour_price": "50",
+            "tour_overview": "Cotopaxi National Park (Spanish: Parque Nacional Cotopaxi) is a protected area in Ecuador situated in the Cotopaxi Province, Napo Province and Pichincha Province, roughly 50 km south of Quito. Trek one of the highest active volcanoes in the world with 5897 m!\r\n\r\nDue to its perfectly symmetrical cone, covered in a thick blanket of snow and ice, the Cotopaxi is one of the tourist highlights in Ecuador and its most visited and climbed volcano.The Cotopaxi National Park is situated in a beautiful paramo plateau, where wild horses graze on the extensive plains at the foot of the volcano or gather to drink at the lovely Limpiopungo lagoon, which reflects the white peaks of nearby Volcan Ruminahui and makes a great spot for watching waterfowl and other birds. Walking in the National Park, you will notice pumice, ash, stone and other volcanic debris amid the tiny paramos plants. On a day trip to the Cotopaxi National Park it is possible to drive as high as 4500m, then trek up a sandy scree slope to reach the snout of the glacier at 5000m.",
+            "tour_peoples_minimum": "$50 per person with minimum 4 people\r\nPrivate tour is also possible at a price of $95 per person (2 people minimum)",
+            "tour_itinerary": "06:30 Meet at meeting point for breakfast, CarpeDM Office",
+            "tour_whats_included": "Breakfast - Lunch - snack\r\nTransport\r\nGuide\r\nMountain Bike with Helmut, Kneepads, Elbowpads * This is an optional activity of approximately 30 minutes. Should be experienced / confident rider.",
+            "tour_whats_not_included": "Additional Snacks / Beverages\nTIPS",
+            "tour_what_to_bring": "Warm clothing\r\nWaterproof jacket\r\nGloves, scarf, hat\r\nHiking boots or trekking shoes\r\nSunglasses\r\nSunscreen\r\nExtra snacks and water",
+            "tour_cancel_text": "Should you need to cancel your trip, you must notify us in writing immediately. Deposits are non-refundable, though if you cancel more than 90 days prior to tour departure date, the deposit is refundable.  Less than 90 days prior to departure, all monies paid are 100% non-refundable, nontransferable. Name changes are not permitted. Insurable risks may be covered under trip cancellation insurance policies, if purchased. We will not grant partial refunds for any unused trip arrangements-voluntarily missed meals, sightseeing, transport, etc-after the trip has commenced, or any refunds to trip members who do not complete any portion of the itinerary for whatever reason. All air tickets are non-refundable and valid only for the flight(s) indicated. We may cancel departures if forced to do so by circumstances such as war, civil or political unrest or what is commonly referred to as force majeure. In these instances we will refund all passengers in full if cancellation takes place more than 60 days prior to tour start date. If cancellation occurs within the 60 day period, we will offer to postpone your trip to another departure of the same tour code within 12 months of the original tour start date or, if circumstances do not permit, an alternative will be offered at that time. We will not be responsible for costs associated with re-issuance or extension of visas, airline change fees, or for any compensation. We strongly recommend that all travellers purchase trip cancellation insurance, as this may provide coverage under such circumstances. We will not be responsible for any expenses incurred, such as visas, vaccinations, independently purchase airfare, or any compensation.",
+            "tour_policies": "$50 per person with minimum 4 people\r\nPrivate tour is also possible at a price of $95 per person (2 people minimum)"
+        },
+    ]
+}
+
+---------------------------------------------------
+
+Dates Check Availabilty:
+--------------------
+6) http://perfectrdp.us/carpedm_webservice/get_tour_check_availabilty.php
+Post Values:
+    tour_id : 1
+
+
+{
+    "status": 1,
+    "msg": "Tour Dates Available",
+    "tour_id": "1",
+    "tour_name": "Cotopaxi Day Tour",
+    "tour_check_available": [
+        {
+            "available_date": "19 Sep, 2017"
+        },
+        {
+            "available_date": "25 Sep, 2017"
+        },
+        {
+            "available_date": "29 Sep, 2017"
+        },
+        {
+            "available_date": "05 Oct, 2017"
+        },
+        {
+            "available_date": "15 Oct, 2017"
+        }
+    ]
+}
+
+---------------------------------------------------
+
+Single Tour Details:
+--------------------
+7) http://perfectrdp.us/carpedm_webservice/get_single_tour_details.php
+
+Post Values:
+    tour_id : 1
+
+{
+    "status": 1,
+    "msg": "Tour List Details",
+    "tour_list": [
+        {
+            "tour_id": "1",
+            "tour_name": "Cotopaxi Day Tour",
+            "tour_latitude": "11.1212316",
+            "tour_langitude": "10.2236666",
+            "tour_image": "http://perfectrdp.us/carpedm_webservice/uploads/cotopaxi_img_1.jpg",
+            "upcoming_dates": "19 Sep,25 Sep,29 Sep",
+            "tour_shortdesc": "Prepare to hike, bike and smile.  Trekking for all ages but biking must be experienced or confident with downhill biking.",
+            "how_many_days": "1 Day | Cotopaxi",
+            "tour_activites_list": [
+                {
+                    "actv_id": "1",
+                    "actv_name": "Hike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/hike.jpg"
+                },
+                {
+                    "actv_id": "2",
+                    "actv_name": "Bike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/bike.jpg"
+                },
+                {
+                    "actv_id": "3",
+                    "actv_name": "Trekking",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/trekking.jpg"
+                }
+            ],
+            "tour_video": "https://www.youtube.com/watch?v=CCpgwG7n1c8",
+            "tour_price": "50",
+            "tour_overview": "Cotopaxi National Park (Spanish: Parque Nacional Cotopaxi) is a protected area in Ecuador situated in the Cotopaxi Province, Napo Province and Pichincha Province, roughly 50 km south of Quito. Trek one of the highest active volcanoes in the world with 5897 m!\r\n\r\nDue to its perfectly symmetrical cone, covered in a thick blanket of snow and ice, the Cotopaxi is one of the tourist highlights in Ecuador and its most visited and climbed volcano.The Cotopaxi National Park is situated in a beautiful paramo plateau, where wild horses graze on the extensive plains at the foot of the volcano or gather to drink at the lovely Limpiopungo lagoon, which reflects the white peaks of nearby Volcan Ruminahui and makes a great spot for watching waterfowl and other birds. Walking in the National Park, you will notice pumice, ash, stone and other volcanic debris amid the tiny paramos plants. On a day trip to the Cotopaxi National Park it is possible to drive as high as 4500m, then trek up a sandy scree slope to reach the snout of the glacier at 5000m.",
+            "tour_peoples_minimum": "$50 per person with minimum 4 people\r\nPrivate tour is also possible at a price of $95 per person (2 people minimum)",
+            "tour_itinerary": "06:30 Meet at meeting point for breakfast, CarpeDM Office",
+            "tour_whats_included": "Breakfast - Lunch - snack\r\nTransport\r\nGuide\r\nMountain Bike with Helmut, Kneepads, Elbowpads * This is an optional activity of approximately 30 minutes. Should be experienced / confident rider.",
+            "tour_whats_not_included": "Additional Snacks / Beverages\nTIPS",
+            "tour_what_to_bring": "Warm clothing\r\nWaterproof jacket\r\nGloves, scarf, hat\r\nHiking boots or trekking shoes\r\nSunglasses\r\nSunscreen\r\nExtra snacks and water",
+            "tour_cancel_text": "Should you need to cancel your trip, you must notify us in writing immediately. Deposits are non-refundable, though if you cancel more than 90 days prior to tour departure date, the deposit is refundable.  Less than 90 days prior to departure, all monies paid are 100% non-refundable, nontransferable. Name changes are not permitted. Insurable risks may be covered under trip cancellation insurance policies, if purchased. We will not grant partial refunds for any unused trip arrangements-voluntarily missed meals, sightseeing, transport, etc-after the trip has commenced, or any refunds to trip members who do not complete any portion of the itinerary for whatever reason. All air tickets are non-refundable and valid only for the flight(s) indicated. We may cancel departures if forced to do so by circumstances such as war, civil or political unrest or what is commonly referred to as force majeure. In these instances we will refund all passengers in full if cancellation takes place more than 60 days prior to tour start date. If cancellation occurs within the 60 day period, we will offer to postpone your trip to another departure of the same tour code within 12 months of the original tour start date or, if circumstances do not permit, an alternative will be offered at that time. We will not be responsible for costs associated with re-issuance or extension of visas, airline change fees, or for any compensation. We strongly recommend that all travellers purchase trip cancellation insurance, as this may provide coverage under such circumstances. We will not be responsible for any expenses incurred, such as visas, vaccinations, independently purchase airfare, or any compensation.",
+            "tour_policies": "$50 per person with minimum 4 people\r\nPrivate tour is also possible at a price of $95 per person (2 people minimum)"
+        },
+    ]
+}
+
+---------------------------------------------------
+
+Check Out Page:
+--------------------
+8) http://perfectrdp.us/carpedm_webservice/tour_checkout.php
+Post Values:
+    tour_id : 2
+    profile_id : sasi@rgmobiles.com
+    tour_date : 2017-10-18
+    number_of_people : 3
+    tour_price : 60
+
+{
+    "status": 1,
+    "msg": "Tour Checkout Process Done.",
+    "profile_id": "sasi@rgmobiles.com",
+    "tour_id": "2",
+    "tour_date": "2017-10-18",
+    "number_of_people": "3",
+    "tour_price": "60",
+    "tour_total_price": 180,
+    "checkout_id" => 1,
+}
+
+---------------------------------------------------
+
+Update lat and lang value:
+--------------------
+9) http://perfectrdp.us/carpedm_webservice/update_lat_lang.php
+Post Values:
+    profile_id : test1234@gmail.com
+    latitude : 11.12123164564
+    langtitude : 10.2236666
+
+{
+    "status": 1,
+    "msg": "Updated the lat and lang values",
+    "profile_id": "test123@gmail.com",
+    "latitude" : "11.12123164564",
+    "langtitude" : "10.2236666"
+}
+
+
+---------------------------------------------------
+
+Payment Status Update:
+-------------------------
+10) http://perfectrdp.us/carpedm_webservice/payment_status_update.php
+Post Values:
+    checkout_id : 1
+    tour_status : 1 or 0  // 1 - Paid and 0 - Pending
+
+{
+    "status": 1,
+    "msg": "Your payment successful",
+    "checkout_id": 2,
+    "tour_status" : 1,
+}
+
+---------------------------------------------------
+
+My Booking:
+-------------------------
+11) http://perfectrdp.us/carpedm_webservice/my_booking.php
+Post Values:
+    profile_id : sasi@rgmobiles.com
+
+{
+    "status": 1,
+    "msg": "My Booking List",
+    "profile_id": "sasi@rgmobiles.com",
+    "Upcoming List": [
+        {
+            "tour_id": "2",
+            "tour_name": "City Tour",
+            "tour_image": "http://perfectrdp.us/carpedm_webservice/uploads/tour_3_img.jpg",
+            "checkout_id": "3",
+            "tour_total_price": "180",
+            "tour_date": "Oct 18, 2017",
+            "checkout_status": "Pending"
+        },
+        {
+            "tour_id": "2",
+            "tour_name": "City Tour",
+            "tour_image": "http://perfectrdp.us/carpedm_webservice/uploads/tour_3_img.jpg",
+            "checkout_id": "7",
+            "tour_total_price": "60",
+            "tour_date": "Oct 18, 2017",
+            "checkout_status": "Pending"
+        }
+    ],
+    "Previous List": [
+        {
+            "tour_id": "1",
+            "tour_name": "Free Walking Tour",
+            "tour_image": "http://perfectrdp.us/carpedm_webservice/uploads/cotopaxi_img_1.jpg",
+            "checkout_id": "2",
+            "tour_total_price": "250",
+            "tour_date": "Dec 31, 1969",
+            "checkout_status": "Paid"
+        }
+    ]
+}
+
+-------------------------------------
+
+Get Near by users:
+-------------------------
+12) http://perfectrdp.us/carpedm_webservice/get_nearby_users.php
+Post Values:
+    place_lat : 37.332333
+    place_lang : -122.031219
+
+{
+    "status": 1,
+    "msg": "User List Details",
+    "user_list": [
+        {
+            "first_name": "Sasi",
+            "last_name": "Kumar",
+            "email": "sasi@rgmobiles.com",
+            "profile_id": "sasi@rgmobiles.com",
+            "imgurl": "http://www.facebook.com/testphoto.jpg",
+            "user_online" : 1
+        }
+    ]
+}
+
+------------------------------------------------
+
+User Send Chat:
+-------------------------
+13) http://perfectrdp.us/carpedm_webservice/user_send_chat.php
+Post Values:
+    from_profile_id : sasi@rgmobiles.com
+    to_profile_id : kabil.dev@test.com
+    tour_id : 1
+    message_content : Hai
+
+{
+    "status": 1,
+    "msg": "Message Sent",
+    "from_profile_id": "sasi@rgmobiles.com",
+    "to_profile_id": "kabil.dev@test.com",
+    "tour_id": "1",
+    "message_content": "hai"
+}
+
+----------------------------------------------
+
+User receive Chat:
+-------------------------
+14) http://perfectrdp.us/carpedm_webservice/user_receive_chat.php
+Post Values:
+    from_profile_id : sasi@rgmobiles.com
+    to_profile_id : kabil.dev@test.com
+    tour_id : 1
+
+{
+    "status": 1,
+    "msg": "Message List",
+    "message_list": [
+        {
+            "tour_id": "1",
+            "message_content": "How are you?",
+            "sent_date_time": "2017-09-20 09:01:01",
+            "from_profile_id": "sasi@rgmobiles.com",
+            "from_first_name": "Sasi",
+            "from_last_name": "Kumar",
+            "from_email": "sasi@rgmobiles.com",
+            "from_user_image": "",
+            "from_latitude": "11.0283259",
+            "from_langtitude": "77.0250919",
+            "to_profile_id": "kabil.dev@rgmobiles.com",
+            "to_first_name": "",
+            "to_last_name": "",
+            "to_email": "",
+            "to_user_image": "",
+            "to_latitude": "",
+            "to_langtitude": ""
+        },
+        {
+            "tour_id": "1",
+            "message_content": "Welcome",
+            "sent_date_time": "2017-09-20 09:00:58",
+            "from_profile_id": "kabil.dev@test.com",
+            "from_first_name": "",
+            "from_last_name": "Kumar",
+            "from_email": "",
+            "from_user_image": "",
+            "from_latitude": "",
+            "from_langtitude": "",
+            "to_profile_id": "sasi@rgmobiles.com",
+            "to_first_name": "Sasi",
+            "to_last_name": "Kumar",
+            "to_email": "sasi@rgmobiles.com",
+            "to_user_image": "",
+            "to_latitude": "11.0283259",
+            "to_langtitude": "77.0250919"
+        },
+        {
+            "tour_id": "1",
+            "message_content": "Welcome",
+            "sent_date_time": "2017-09-20 08:25:30",
+            "from_profile_id": "kabil@test.com",
+            "from_first_name": "Kabil",
+            "from_last_name": "Dev",
+            "from_email": "kabil@test.com",
+            "from_user_image": "www.gogole.com",
+            "from_latitude": "11.121221",
+            "from_langtitude": "70.212121",
+            "to_profile_id": "sasi@rgmobiles.com",
+            "to_first_name": "Sasi",
+            "to_last_name": "Kumar",
+            "to_email": "sasi@rgmobiles.com",
+            "to_user_image": "",
+            "to_latitude": "11.0283259",
+            "to_langtitude": "77.0250919"
+        },
+        {
+            "tour_id": "1",
+            "message_content": "hai",
+            "sent_date_time": "2017-09-20 08:02:56",
+            "from_profile_id": "sasi@rgmobiles.com",
+            "from_first_name": "Sasi",
+            "from_last_name": "Kumar",
+            "from_email": "sasi@rgmobiles.com",
+            "from_user_image": "",
+            "from_latitude": "11.0283259",
+            "from_langtitude": "77.0250919",
+            "to_profile_id": "kabil@test.com",
+            "to_first_name": "Kabil",
+            "to_last_name": "Dev",
+            "to_email": "kabil@test.com",
+            "to_user_image": "www.gogole.com",
+            "to_latitude": "11.121221",
+            "to_langtitude": "70.212121"
+        }
+    ]
+}
+
+===========================================================
+
+User Logout:
+-------------------------
+15) http://perfectrdp.us/carpedm_webservice/user_logout.php
+Post Values:
+    profile_id : sasi@rgmobiles.com
+
+{
+    "status": 1,
+    "msg": "Logout Success",
+    "profile_id": "sasi@rgmobiles.com",
+    "user_online": "0"
+}
+
+
+===============================================
+
+16) User Single Upcoming Tour
+-------------------------------
+http://perfectrdp.us/carpedm_webservice/get_user_upcoming_tour.php
+
+Post Values:
+    profile_id : sasi@rgmobiles.com
+
+
+{
+    "status": 1,
+    "msg": "Tour List Details",
+    "tour_list": [
+        {
+            "tour_id": "2",
+            "tour_name": "City Tour",
+            "tour_latitude": "43.7512977",
+            "tour_langitude": "-105.5173692",
+            "tour_image": "http://perfectrdp.us/carpedm_webservice/uploads/tour_3_img.jpg",
+            "upcoming_dates": "24 Sep,29 Sep,02 Oct",
+            "tour_shortdesc": "Prepare to hike waterfalls, Zip-line and optional visit to Chocolate or Butterfly farm.",
+            "how_many_days": "1 Day | Mindo",
+            "tour_activites_list": [
+                {
+                    "actv_id": "1",
+                    "actv_name": "Hike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/hike.jpg"
+                },
+                {
+                    "actv_id": "2",
+                    "actv_name": "Bike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/bike.jpg"
+                },
+                {
+                    "actv_id": "3",
+                    "actv_name": "Trekking",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/trekking.jpg"
+                }
+            ],
+            "tour_video": "https://www.youtube.com/watch?v=QUIDF_BSgZU",
+            "tour_price": "60",
+            "tour_overview": "Mindo is a small town in the Andean foothills of Ecuador. Set in beautiful cloud-forest, it attracts birdwatchers first and foremost, but also has attractions for other tourists. Mindo is located to the north west of Quito. This town was founded in 1861 and the current population is around 3000 inhabitants. Mindo is surrounded by the Mindo-Nambillo Cloud Forest; the forest is home to hundreds of species of birds many of them are in danger of extinction.",
+            "tour_peoples_minimum": "We operate with MINIMUM 4 People - $60per person",
+            "tour_itinerary": "Departure at 7am from Carpedm's office we will have breakfast and then set off towards Mindo. The drive takes about two and a half hours. On the way we can stop outside the equator line monument site for anyone who wants to take a quick picture and then carry along the beautiful Mountain roads where you will notice the change in scenery as you go down in altitude.\r\n\r\nOur first stop is the Zip lines or Canopy as they call it here as you are literally above the canopy. There are 10 lines in total and if you are feeling brave you could even try the superman or Butterfly.\r\n\r\nAfter about an hour of adrenalin fueled fun you will head towards the Tarabita which is a cable car that takes you to the start of your waterfall walk. As you walk through the cloud forest you could see a variety of different birds and butterflies. if you bring a swim suit you could take a swim in the crystal clear water.\r\n\r\nOnce you have dried off a little we will head for lunch. After lunch optional activities are either:\r\n\r\n1. Visit to chocolate factory (not included in price).  OR\r\n\r\n2. Visit to butterfly Farm / Hummingbirds (not included in price)\r\n\r\nAfter a fun filled day you will head back to Quito arriving to our office at around 7pm.",
+            "tour_whats_included": "Lunch\r\nTransport\r\nGuide",
+            "tour_whats_not_included": "Breakfast and Extra Snacks/Beverages\r\n$20 entry to ziplining\r\n$5 entry to waterfall walk\r\n$6 Entry to Chocolate factory Tour or\r\n$6 Butterfly Farm\r\nUmpa Lumpas\r\nTIPS",
+            "tour_what_to_bring": "Waterproof jacket/rain jacket\r\nsunglasses\r\nsunscreen\r\nbinoculars * nice to have\r\ncamera\r\nwater\r\nsnacks",
+            "tour_cancel_text": "Should you need to cancel your trip, you must notify us in writing immediately. Deposits are non-refundable, though if you cancel more than 90 days prior to tour departure date, the deposit is refundable.  Less than 90 days prior to departure, all monies paid are 100% non-refundable, nontransferable. Name changes are not permitted. Insurable risks may be covered under trip cancellation insurance policies, if purchased. We will not grant partial refunds for any unused trip arrangements-voluntarily missed meals, sightseeing, transport, etc-after the trip has commenced, or any refunds to trip members who do not complete any portion of the itinerary for whatever reason. All air tickets are non-refundable and valid only for the flight(s) indicated. We may cancel departures if forced to do so by circumstances such as war, civil or political unrest or what is commonly referred to as force majeure. In these instances we will refund all passengers in full if cancellation takes place more than 60 days prior to tour start date. If cancellation occurs within the 60 day period, we will offer to postpone your trip to another departure of the same tour code within 12 months of the original tour start date or, if circumstances do not permit, an alternative will be offered at that time. We will not be responsible for costs associated with re-issuance or extension of visas, airline change fees, or for any compensation. We strongly recommend that all travellers purchase trip cancellation insurance, as this may provide coverage under such circumstances. We will not be responsible for any expenses incurred, such as visas, vaccinations, independently purchase airfare, or any compensation.",
+            "tour_policies": "We operate with MINIMUM 4 People - $60per person"
+        }
+    ]
+}
+
+=================================================
+
+17) Guest User Upcoming Tour
+-------------------------------
+http://perfectrdp.us/carpedm_webservice/get_upcoming_tour_details.php
+
+{
+    "status": 1,
+    "msg": "Tour List Details",
+    "tour_list": [
+        {
+            "tour_id": "2",
+            "tour_name": "City Tour",
+            "tour_latitude": "43.7512977",
+            "tour_langitude": "-105.5173692",
+            "tour_image": "http://perfectrdp.us/carpedm_webservice/uploads/tour_3_img.jpg",
+            "upcoming_dates": "24 Sep,29 Sep,02 Oct",
+            "tour_shortdesc": "Prepare to hike waterfalls, Zip-line and optional visit to Chocolate or Butterfly farm.",
+            "how_many_days": "1 Day | Mindo",
+            "tour_activites_list": [
+                {
+                    "actv_id": "1",
+                    "actv_name": "Hike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/hike.jpg"
+                },
+                {
+                    "actv_id": "2",
+                    "actv_name": "Bike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/bike.jpg"
+                },
+                {
+                    "actv_id": "3",
+                    "actv_name": "Trekking",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/trekking.jpg"
+                }
+            ],
+            "tour_video": "https://www.youtube.com/watch?v=QUIDF_BSgZU",
+            "tour_price": "60",
+            "tour_overview": "Mindo is a small town in the Andean foothills of Ecuador. Set in beautiful cloud-forest, it attracts birdwatchers first and foremost, but also has attractions for other tourists. Mindo is located to the north west of Quito. This town was founded in 1861 and the current population is around 3000 inhabitants. Mindo is surrounded by the Mindo-Nambillo Cloud Forest; the forest is home to hundreds of species of birds many of them are in danger of extinction.",
+            "tour_peoples_minimum": "We operate with MINIMUM 4 People - $60per person",
+            "tour_itinerary": "Departure at 7am from Carpedm's office we will have breakfast and then set off towards Mindo. The drive takes about two and a half hours. On the way we can stop outside the equator line monument site for anyone who wants to take a quick picture and then carry along the beautiful Mountain roads where you will notice the change in scenery as you go down in altitude.\r\n\r\nOur first stop is the Zip lines or Canopy as they call it here as you are literally above the canopy. There are 10 lines in total and if you are feeling brave you could even try the superman or Butterfly.\r\n\r\nAfter about an hour of adrenalin fueled fun you will head towards the Tarabita which is a cable car that takes you to the start of your waterfall walk. As you walk through the cloud forest you could see a variety of different birds and butterflies. if you bring a swim suit you could take a swim in the crystal clear water.\r\n\r\nOnce you have dried off a little we will head for lunch. After lunch optional activities are either:\r\n\r\n1. Visit to chocolate factory (not included in price).  OR\r\n\r\n2. Visit to butterfly Farm / Hummingbirds (not included in price)\r\n\r\nAfter a fun filled day you will head back to Quito arriving to our office at around 7pm.",
+            "tour_whats_included": "Lunch\r\nTransport\r\nGuide",
+            "tour_whats_not_included": "Breakfast and Extra Snacks/Beverages\r\n$20 entry to ziplining\r\n$5 entry to waterfall walk\r\n$6 Entry to Chocolate factory Tour or\r\n$6 Butterfly Farm\r\nUmpa Lumpas\r\nTIPS",
+            "tour_what_to_bring": "Waterproof jacket/rain jacket\r\nsunglasses\r\nsunscreen\r\nbinoculars * nice to have\r\ncamera\r\nwater\r\nsnacks",
+            "tour_cancel_text": "Should you need to cancel your trip, you must notify us in writing immediately. Deposits are non-refundable, though if you cancel more than 90 days prior to tour departure date, the deposit is refundable.  Less than 90 days prior to departure, all monies paid are 100% non-refundable, nontransferable. Name changes are not permitted. Insurable risks may be covered under trip cancellation insurance policies, if purchased. We will not grant partial refunds for any unused trip arrangements-voluntarily missed meals, sightseeing, transport, etc-after the trip has commenced, or any refunds to trip members who do not complete any portion of the itinerary for whatever reason. All air tickets are non-refundable and valid only for the flight(s) indicated. We may cancel departures if forced to do so by circumstances such as war, civil or political unrest or what is commonly referred to as force majeure. In these instances we will refund all passengers in full if cancellation takes place more than 60 days prior to tour start date. If cancellation occurs within the 60 day period, we will offer to postpone your trip to another departure of the same tour code within 12 months of the original tour start date or, if circumstances do not permit, an alternative will be offered at that time. We will not be responsible for costs associated with re-issuance or extension of visas, airline change fees, or for any compensation. We strongly recommend that all travellers purchase trip cancellation insurance, as this may provide coverage under such circumstances. We will not be responsible for any expenses incurred, such as visas, vaccinations, independently purchase airfare, or any compensation.",
+            "tour_policies": "We operate with MINIMUM 4 People - $60per person"
+        }
+    ]
+}
+
+=========================================================================
+
+Sep 25, 2017
+----------------
+
+1) Nearby Locations less than 500 km:
+-----------------------------
+http://perfectrdp.us/carpedm_webservice/get_nearby_locations.php
+
+Post Values:
+    place_lat : -0.1865938
+    place_lang : -78.570625
+
+{
+    "status": 1,
+    "msg": "Tour List Details",
+    "tour_list": [
+        {
+            "tour_id": "1",
+            "tour_name": "Free Walking Tour",
+            "tour_latitude": "-0.1865938",
+            "tour_langitude": "-78.570625",
+            "tour_image": "http://perfectrdp.us/carpedm_webservice/uploads/free_walking_tour.jpg",
+            "upcoming_dates": "29 Sep,05 Oct,15 Oct",
+            "tour_shortdesc": "Quito, the capital of Ecuador, was founded in the 16th century on the ruins of an Inca city and stands at an altitude of 2,850 m. Despite the 1917 earthquake, the city has the best-preserved, least altered historic centre in Latin America. The monasteries of San Francisco and Santo Domingo, and the Church and Jesuit College of La Compañía, with their rich interiors, are pure examples of the \u0091Baroque school of Quito\u0092, which is a fusion of Spanish, Italian, Moorish, Flemish and indigenous art.",
+            "how_many_days": "1 Day | Free Walking Tour",
+            "tour_activites_list": [
+                {
+                    "actv_id": "1",
+                    "actv_name": "Hike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/hike.jpg"
+                },
+                {
+                    "actv_id": "2",
+                    "actv_name": "Bike",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/bike.jpg"
+                },
+                {
+                    "actv_id": "3",
+                    "actv_name": "Trekking",
+                    "actv_image": "http://perfectrdp.us/carpedm_webservice/uploads/trekking.jpg"
+                }
+            ],
+            "tour_video": "https://www.youtube.com/watch?v=CCpgwG7n1c8",
+            "tour_price": "50",
+            "tour_overview": "Quito, the capital of Ecuador, was founded in the 16th century on the ruins of an Inca city and stands at an altitude of 2,850 m. Despite the 1917 earthquake, the city has the best-preserved, least altered historic centre in Latin America. The monasteries of San Francisco and Santo Domingo, and the Church and Jesuit College of La Compañía, with their rich interiors, are pure examples of the \u0091Baroque school of Quito\u0092, which is a fusion of Spanish, Italian, Moorish, Flemish and indigenous art.\r\n\r\nTake a tour of Quito to learn more about this beautiful city and its local culture. Visit the Old Town, a UNESCO World Heritage Site, with stops at the golden Compañia Church, San Francisco Square, and the Panecillo, a towering statue of the virgin of Quito who looks out over a stunning view of the city.\r\n\r\n",
+            "tour_peoples_minimum": "$ FREE $\r\nPrivate tour is also possible at a price of $40 per person (2 people minimum)",
+            "tour_itinerary": "10:10 Meet at CarpeDM Office",
+            "tour_whats_included": "Includes \u0096 smiles & hugs",
+            "tour_whats_not_included": "TIPS",
+            "tour_what_to_bring": "Sunglasses\r\nSunscreen\r\nWater",
+            "tour_cancel_text": "Should you need to cancel your trip, you must notify us in writing immediately. Deposits are non-refundable, though if you cancel more than 90 days prior to tour departure date, the deposit is refundable.  Less than 90 days prior to departure, all monies paid are 100% non-refundable, nontransferable. Name changes are not permitted. Insurable risks may be covered under trip cancellation insurance policies, if purchased. We will not grant partial refunds for any unused trip arrangements-voluntarily missed meals, sightseeing, transport, etc-after the trip has commenced, or any refunds to trip members who do not complete any portion of the itinerary for whatever reason. All air tickets are non-refundable and valid only for the flight(s) indicated. We may cancel departures if forced to do so by circumstances such as war, civil or political unrest or what is commonly referred to as force majeure. In these instances we will refund all passengers in full if cancellation takes place more than 60 days prior to tour start date. If cancellation occurs within the 60 day period, we will offer to postpone your trip to another departure of the same tour code within 12 months of the original tour start date or, if circumstances do not permit, an alternative will be offered at that time. We will not be responsible for costs associated with re-issuance or extension of visas, airline change fees, or for any compensation. We strongly recommend that all travellers purchase trip cancellation insurance, as this may provide coverage under such circumstances. We will not be responsible for any expenses incurred, such as visas, vaccinations, independently purchase airfare, or any compensation.",
+            "tour_policies": "$ FREE $\r\nPrivate tour is also possible at a price of $40 per person (2 people minimum)",
+            "type": "1",
+            "distance_in_meter": "0.06"
+        },
+    ]
+}
+
+--------------------------------------------
+
+2) Daytour List:
+---------------------------
+http://perfectrdp.us/carpedm_webservice/get_daytour_list.php
+
+{
+    "status": 1,
+    "msg": "Tour List Details",
+    "tour_list": [
+        {
+            "tour_id": "1",
+            "tour_name": "Free Walking Tour"
+        },
+        {
+            "tour_id": "2",
+            "tour_name": "City Tour"
+        },
+        {
+            "tour_id": "3",
+            "tour_name": "Equator Line Visit"
+        },
+        {
+            "tour_id": "4",
+            "tour_name": "City Tour + Equator Line Visit"
+        },
+        {
+            "tour_id": "5",
+            "tour_name": "Cotopaxi Day Tour"
+        },
+        {
+            "tour_id": "6",
+            "tour_name": "Quilotoa Day Tour"
+        },
+        {
+            "tour_id": "7",
+            "tour_name": "Otavalo Day Tour"
+        },
+        {
+            "tour_id": "8",
+            "tour_name": "Mindo Day Tour"
+        },
+        {
+            "tour_id": "9",
+            "tour_name": "Papallacta Hotsprings"
+        },
+        {
+            "tour_id": "10",
+            "tour_name": "Antisana Day Tour"
+        }
+   }
+
+-----------------------------------------------------
+
+3) Daytour Registartion:
+---------------------------
+http://perfectrdp.us/carpedm_webservice/daytour_registration.php
+
+Post Values:
+    checkout_id : 162
+    
+    first_name : 1037118599725144
+    last_name : -78.570625
+    email : test@gmail.com
+    passport_no : 25649879798799
+    nationality : US
+    date_of_birth : 1995-10-15
+    hotel_room : 5
+    home_address :  11, test addr, california
+    start_date : 2017-10-25
+    type_of_daytour : 2 //tour id
+    height : 6 feet
+    weight : 60 Kg
+    shoe_size : 9
+    insurance_policy_no: 12453265789
+    vegetarian : Yes
+    diet_restrictions: No
+    emergency_contact : james - 9395695656966
+
+
+{
+    "status": 1,
+    "msg": "Registration Successfully"
+}
+
+
+=======================================================
+
+Sep 26, 2017
+----------------
+
+1) Get Near by Users less than 500 meter:
+---------------------------
+http://perfectrdp.us/carpedm_webservice/get_nearby_users.php
+
+Post Values:
+    place_lat : -0.1865938
+    place_lang : -78.570625
+
+
+{
+    "status": 1,
+    "msg": "User List Details",
+    "user_list": [
+        {
+            "first_name": "TestF",
+            "last_name": "TestL",
+            "email": "test123@gmail.com",
+            "profile_id": "1037118599725144",
+            "imgurl": "https://graph.facebook.com/1613902785295322/picture?type=large",
+            "user_online": "0",
+            "distance_in_meter": "0.06"
+        },
+        {
+            "first_name": "Sasi",
+            "last_name": "Kumar",
+            "email": "sasi@rgmobiles.com",
+            "profile_id": "sasi@rgmobiles.com",
+            "imgurl": "",
+            "user_online": "1",
+            "distance_in_meter": "0.10"
+        },
+        {
+            "first_name": "Kabil",
+            "last_name": "Dev",
+            "email": "kabil@test.com",
+            "profile_id": "kabil@test.com",
+            "imgurl": "www.gogole.com",
+            "user_online": "1",
+            "distance_in_meter": "6.99"
+        }
+   ]
+}
+
+=======================================================
+
+Nov 10, 2017
+-------------------
+1) http://perfectrdp.us/carpedm_webservice/delete_checkout_tour.php
+
+Post Values:
+    checkout_id : 2
+
+
+{
+    "status": 1,
+    "msg": "Tour Deleted Successfully."
+    "checkout_id": 2
+}
+
+==================================================
+
+Nov 13, 2017
+-------------------
+1) http://perfectrdp.us/carpedm_webservice/view_checkout.php
+
+Post Values:
+    checkout_id : 2
+
+
+{
+    "status": 1,
+    "msg": "View Tour Checkout.",
+    "checkout_id": "3",
+    "tour_date": "2017-10-18",
+    "number_of_people": "3",
+    "tour_price": "60"
+}
+
+--------------------------------------------
+
+2) http://perfectrdp.us/carpedm_webservice/update_checkout.php
+
+Post Values:
+    checkout_id : 3
+    number_of_people : 4
+    tour_date : 2017-11-15
+    tour_price : 60
+
+{
+    "status": 1,
+    "msg": "Updated Checkout Details.",
+    "checkout_id": "4",
+    "tour_date": "2017-11-15",
+    "number_of_people": "4",
+    "tour_price": "60",
+    "tour_total_price": 240
+}
+
+-----------------------------------------
+
+3) http://perfectrdp.us/carpedm_webservice/view_daytour_details.php
+
+Post Values:
+    checkout_id : 3
+
+{
+    "status": 1,
+    "msg": "View Day Tour Details.",
+    "checkout_id": "3",
+    "first_name": "qqq",
+    "last_name": "we",
+    "email": "rerr2@gmail.com",
+    "passport_no": "159944445",
+    "nationality": "usa",
+    "date_of_birth": "13/Nov/2017 ",
+    "hotel_room": "5",
+    "home_address": "sss",
+    "start_date": "Wed, 08 Nov 2017",
+    "type_of_daytour": "7",  // tour_id
+    "height": "2",
+    "shoe_size": "5",
+    "insurance_policy_no": "5",
+    "vegetarian": "yes",
+    "diet_restrictions": "ghfvjhv",
+    "emergency_contact": "5555555"
+}
+
+----------------------------------------
+
+4) http://perfectrdp.us/carpedm_webservice/update_daytour_details.php
+
+Post Values:
+    checkout_id : 3
+
+    first_name : 1037118599725144
+    last_name : -78.570625
+    email : test@gmail.com
+    passport_no : 25649879798799
+    nationality : US
+    date_of_birth : 1995-10-15
+    hotel_room : 5
+    home_address :  11, test addr, california
+    start_date : 2017-10-25
+    type_of_daytour : 7 //tour id
+    height : 6 feet
+    weight : 60 Kg
+    shoe_size : 9
+    insurance_policy_no: 12453265789
+    vegetarian : Yes
+    diet_restrictions: No
+    emergency_contact : james - 9395695656966
+
+{
+    "status": 1,
+    "msg": "View Day Tour Details.",
+    "checkout_id": "3",
+    "first_name": "qqq",
+    "last_name": "we",
+    "email": "rerr2@gmail.com",
+    "passport_no": "159944445",
+    "nationality": "usa",
+    "date_of_birth": "13/Nov/2017 ",
+    "hotel_room": "5",
+    "home_address": "sss",
+    "start_date": "Wed, 08 Nov 2017",
+    "type_of_daytour": "7",  // tour_d
+    "height": "2",
+    "shoe_size": "5",
+    "insurance_policy_no": "5",
+    "vegetarian": "yes",
+    "diet_restrictions": "ghfvjhv",
+    "emergency_contact": "5555555"
+}
